@@ -66,37 +66,50 @@ footer p{font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:upp
 }
 
 .page-wrap{position:relative;z-index:1;padding:7rem 4rem 5rem;max-width:1200px;margin:0 auto;}
+.mb2{margin-bottom:2rem;} .mb3{margin-bottom:3rem;} .mb4{margin-bottom:4rem;}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
-.mb1{margin-bottom:1rem;} .mb2{margin-bottom:2rem;} .mb3{margin-bottom:3rem;}
-.text-muted{color:rgba(255,255,255,.55);font-size:.9rem;line-height:1.75;}
-.text-small{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.6;}
-.big-number{font-size:3rem;font-weight:800;letter-spacing:-.03em;color:var(--g300);line-height:1;}
-.big-number-purple{color:var(--p300);}
-.card-title{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.4rem;}
-.card-sub{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g300);margin-bottom:.6rem;}
-.card-sub-purple{color:var(--p300);}
-.card-body{font-size:.9rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,.65);font-style:italic;}
-.timeline-item{padding:2rem 0;border-bottom:.5px solid rgba(109,212,154,.1);display:grid;grid-template-columns:180px 1fr;gap:2rem;}
-.timeline-item:last-child{border-bottom:none;}
-.timeline-date{font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g400);padding-top:.25rem;}
-.timeline-company{font-size:.75rem;font-weight:500;color:rgba(255,255,255,.45);margin-top:.2rem;}
-.timeline-role{font-size:1.4rem;font-weight:800;letter-spacing:-.01em;color:var(--white);margin-bottom:.75rem;line-height:1.15;}
-.timeline-role span{color:var(--g300);}
-.timeline-body{font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.65);margin-bottom:.75rem;}
-.timeline-body p{margin-bottom:.6rem;}
-.timeline-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
-.quote-mark{font-size:3rem;line-height:1;color:var(--p400);opacity:.6;margin-bottom:.5rem;}
-.rec-text{font-size:.9rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.8);font-style:italic;margin-bottom:1.2rem;}
-.rec-author-name{font-size:.85rem;font-weight:700;color:var(--p300);}
-.rec-author-role{font-size:.65rem;font-weight:500;letter-spacing:.08em;color:rgba(255,255,255,.4);text-transform:uppercase;margin-top:.2rem;}
-.placeholder-box{border:.5px dashed rgba(109,212,154,.3);border-radius:12px;padding:3rem;text-align:center;background:rgba(15,61,34,.1);}
-.placeholder-box p{font-size:.9rem;color:rgba(255,255,255,.4);line-height:1.7;}
-.placeholder-box strong{color:var(--g300);}
+
+.stat-card{border-radius:12px;padding:2rem 1.5rem;border:.5px solid rgba(109,212,154,.15);background:rgba(15,61,34,.2);text-align:center;transition:all .25s;}
+.stat-card:hover{border-color:rgba(109,212,154,.4);background:rgba(15,61,34,.35);transform:translateY(-3px);}
+.stat-card.purple{border-color:rgba(185,164,232,.15);background:rgba(28,20,56,.2);}
+.stat-card.purple:hover{border-color:rgba(185,164,232,.4);background:rgba(28,20,56,.35);}
+.stat-num{font-size:2.8rem;font-weight:800;letter-spacing:-.03em;color:var(--g300);line-height:1;display:block;margin-bottom:.3rem;}
+.stat-card.purple .stat-num{color:var(--p300);}
+.stat-desc{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);line-height:1.5;}
+
+.section-eyebrow{font-size:.6rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--g300);margin-bottom:.5rem;}
+.section-heading{font-size:1.8rem;font-weight:800;letter-spacing:-.02em;color:var(--white);margin-bottom:.6rem;line-height:1.15;}
+.section-intro{font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.55);max-width:640px;margin-bottom:2rem;}
+
+.feature-card{border-radius:12px;padding:2rem;border:.5px solid rgba(109,212,154,.15);background:rgba(15,61,34,.2);transition:all .25s;position:relative;overflow:hidden;}
+.feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--g400),var(--g600));}
+.feature-card:hover{border-color:rgba(109,212,154,.35);transform:translateY(-2px);}
+.feature-card.purple::before{background:linear-gradient(90deg,var(--p400),var(--p600));}
+.feature-card.purple{border-color:rgba(185,164,232,.15);background:rgba(28,20,56,.2);}
+.feature-card.purple:hover{border-color:rgba(185,164,232,.35);}
+.feature-title{font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:.5rem;line-height:1.3;}
+.feature-sub{font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--g300);margin-bottom:.8rem;}
+.feature-card.purple .feature-sub{color:var(--p300);}
+.feature-body{font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.6);}
+.feature-body strong{color:var(--white);font-weight:600;}
+
+.scope-table{width:100%;border-collapse:collapse;margin-bottom:3rem;}
+.scope-table th{font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);text-align:left;padding:.8rem 1rem;border-bottom:.5px solid rgba(109,212,154,.15);}
+.scope-table td{font-size:.88rem;padding:1rem;border-bottom:.5px solid rgba(109,212,154,.07);vertical-align:top;line-height:1.6;}
+.scope-table tr:last-child td{border-bottom:none;}
+.scope-table td:first-child{font-weight:700;color:var(--g300);white-space:nowrap;width:160px;}
+.scope-table td:nth-child(2){color:rgba(255,255,255,.65);font-weight:300;}
+.scope-table td:nth-child(3){color:rgba(255,255,255,.4);font-size:.72rem;font-weight:500;letter-spacing:.05em;white-space:nowrap;text-align:right;}
+.scope-table tr:hover td{background:rgba(109,212,154,.04);}
+
+.section-divider{height:.5px;background:linear-gradient(90deg,transparent,var(--g500),var(--p500),transparent);margin:4rem 0;}
+
 @media(max-width:768px){
   .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
-  .timeline-item{grid-template-columns:1fr;gap:.5rem;}
+  .scope-table td:first-child{white-space:normal;}
+  .scope-table td:nth-child(3){text-align:left;}
 }
 </style>
 </head>
@@ -113,72 +126,165 @@ footer p{font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:upp
 </nav>
 
 <div class="page-wrap">
-  <p class="page-eyebrow">Highlights</p>
+
+  <p class="page-eyebrow">What I've built</p>
   <h1 class="page-title">Accomplishments</h1>
   <div class="page-divider"></div>
 
-  <div class="grid-4 mb3">
-    <div class="card reveal">
-      <div class="big-number">10</div>
-      <div class="label" style="margin-top:.5rem;">Countries</div>
-      <p class="text-small" style="margin-top:.4rem;">People & finance operations spanning 10 countries on 5 continents</p>
+  <!-- BY THE NUMBERS -->
+  <div class="mb4">
+    <div class="section-eyebrow">By the numbers</div>
+    <h2 class="section-heading">The work, quantified.</h2>
+    <p class="section-intro">Every figure below is traceable to a Jira issue, a Confluence artifact, a platform record, or a financial statement. These are not estimates.</p>
+
+    <div class="grid-4 mb2">
+      <div class="stat-card reveal">
+        <span class="stat-num">699</span>
+        <span class="stat-desc">Jira issues worked in 52 weeks</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num">$183K</span>
+        <span class="stat-desc">Monthly invoicing owned · Jan 2026</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num">21</span>
+        <span class="stat-desc">Jurisdictions managed across 10 countries</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-num">3</span>
+        <span class="stat-desc">Full platform migrations led end-to-end</span>
+      </div>
     </div>
-    <div class="card reveal">
-      <div class="big-number">10</div>
-      <div class="label" style="margin-top:.5rem;">US States</div>
-      <p class="text-small" style="margin-top:.4rem;">Multi-state employment compliance across 10 US jurisdictions</p>
-    </div>
-    <div class="card reveal">
-      <div class="big-number">15mo</div>
-      <div class="label" style="margin-top:.5rem;">To Director</div>
-      <p class="text-small" style="margin-top:.4rem;">Promoted to Director level within 15 months of rejoining</p>
-    </div>
-    <div class="card reveal">
-      <div class="big-number">80+</div>
-      <div class="label" style="margin-top:.5rem;">Accounts</div>
-      <p class="text-small" style="margin-top:.4rem;">Client accounts managed simultaneously as Operations Manager</p>
+
+    <div class="grid-4">
+      <div class="stat-card purple reveal">
+        <span class="stat-num">161</span>
+        <span class="stat-desc">Documentation, SOP & policy issues delivered</span>
+      </div>
+      <div class="stat-card purple reveal">
+        <span class="stat-num">20+</span>
+        <span class="stat-desc">Major Confluence artifacts built or expanded</span>
+      </div>
+      <div class="stat-card purple reveal">
+        <span class="stat-num">12+</span>
+        <span class="stat-desc">Company policies authored from scratch</span>
+      </div>
+      <div class="stat-card purple reveal">
+        <span class="stat-num">10</span>
+        <span class="stat-desc">Worker lifecycle events executed in Q1 2026 alone</span>
+      </div>
     </div>
   </div>
 
-  <div class="grid-4 mb3">
-    <div class="card reveal">
-      <div class="big-number">€800K+</div>
-      <div class="label" style="margin-top:.5rem;">Portfolio</div>
-      <p class="text-small" style="margin-top:.4rem;">Cumulative project value managed at Bossert Associates</p>
+  <div class="section-divider"></div>
+
+  <!-- WHAT I BUILT -->
+  <div class="mb4">
+    <div class="section-eyebrow">Infrastructure</div>
+    <h2 class="section-heading">Built from scratch.</h2>
+    <p class="section-intro">None of this existed before I joined. All of it runs the company today.</p>
+
+    <div class="grid-2 mb2">
+      <div class="feature-card reveal">
+        <div class="feature-sub">People Operations</div>
+        <div class="feature-title">Full HR Infrastructure — 21 Jurisdictions</div>
+        <p class="feature-body">Designed and implemented the entire HR function from zero — compliant onboarding and offboarding workflows, EOR and contractor frameworks, a full policy library, recruiting playbooks, and an onboarding system covering <strong>US employees, 1099 contractors, international contractors, and EOR employees</strong> across 21 jurisdictions in 10 countries.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-sub">Finance Operations</div>
+        <div class="feature-title">End-to-End Finance Ownership</div>
+        <p class="feature-body">Full AR/AP ownership with <strong>$149K–$183K in monthly invoicing</strong> processed with no dedicated finance team support. Built the billing process with the CTO. Manages QBO, ChargeOver, Avalara, and banking operations — including collections, reconciliation, payroll audits, and spend control.</p>
+      </div>
     </div>
-    <div class="card reveal">
-      <div class="big-number">67</div>
-      <div class="label" style="margin-top:.5rem;">Guides</div>
-      <p class="text-small" style="margin-top:.4rem;">Global hiring guides delivered at WorkMotion</p>
+
+    <div class="grid-2 mb2">
+      <div class="feature-card reveal">
+        <div class="feature-sub">Knowledge Management</div>
+        <div class="feature-title">HRFIN Confluence Space — Single Source of Truth</div>
+        <p class="feature-body">Led the full migration from Guru to Confluence, creating the documentation architecture the company still runs on. Built <strong>10–20 major artifacts</strong> including the policy library, playbook library, operating SOPs, and recruiting infrastructure — plus 40–60+ smaller pages, checklists, and project documents.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-sub">Systems</div>
+        <div class="feature-title">3 Platform Migrations — Evaluated, Decided, Executed</div>
+        <p class="feature-body">Led all three migrations independently: <strong>Deel → Rippling Payroll</strong> (eliminated recurring errors, reduced cost), <strong>BambooHR → Rippling ATS</strong> (consolidated hiring ops, eliminated duplicate data), and <strong>Guru → Confluence</strong> (unified knowledge infrastructure). Each was evaluated, decided, and executed without external support.</p>
+      </div>
     </div>
-    <div class="card reveal">
-      <div class="big-number">1000+</div>
-      <div class="label" style="margin-top:.5rem;">Knowledge Pieces</div>
-      <p class="text-small" style="margin-top:.4rem;">Quality knowledge pieces generated in first month at WorkMotion</p>
-    </div>
-    <div class="card reveal">
-      <div class="big-number">66%</div>
-      <div class="label" style="margin-top:.5rem;">Faster Response</div>
-      <p class="text-small" style="margin-top:.4rem;">Reduction in client response time at Bossert Associates</p>
+
+    <div class="grid-2">
+      <div class="feature-card reveal">
+        <div class="feature-sub">Compensation & Benefits</div>
+        <div class="feature-title">Full Payroll & Benefits Cycle Ownership</div>
+        <p class="feature-body">Owns the complete compensation cycle end-to-end: bonus and commission calculation and tracking, payroll audits and corrections, benefits configuration including <strong>401k employer match</strong>, maternity leave modeling, and multi-state and international compliance — all without a dedicated payroll team.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-sub">Culture & Engagement</div>
+        <div class="feature-title">Recognition, L&D & Employee Experience</div>
+        <p class="feature-body">Built the internal recognition program (Kudos), coordinated engagement and social events, curated Udemy L&D content, and designed the feedback and survey infrastructure used for HR decision-making. Owns the company-wide calendar and all recurring SLT document preparation.</p>
+      </div>
     </div>
   </div>
 
-  <div class="grid-2 mb3">
-    <div class="card reveal">
-      <div class="card-sub">Built from scratch</div>
-      <div class="card-title">HR Infrastructure at Unlimited Tech Solutions</div>
-      <p class="text-muted">Designed and implemented the entire HR function from the ground up — onboarding, offboarding, contractor and EOR frameworks, HRIS (Rippling), and the HRFIN documentation system in Confluence and Jira that the team still runs on today.</p>
-    </div>
-    <div class="card reveal">
-      <div class="card-sub">U.S. Government</div>
-      <div class="card-title">Secret Security Clearance</div>
-      <p class="text-muted">Held U.S. Government Secret Security Clearance throughout tenure as Consular Assistant at the U.S. Embassy in Santo Domingo, Dominican Republic. Received 4 Embassy awards during an 8-month staffing gap.</p>
-    </div>
+  <div class="section-divider"></div>
+
+  <!-- SCOPE TABLE -->
+  <div class="mb4">
+    <div class="section-eyebrow">Scope</div>
+    <h2 class="section-heading">One person. Eight functions.</h2>
+    <p class="section-intro">In most organizations, each row below is a separate hire.</p>
+
+    <table class="scope-table reveal">
+      <thead>
+        <tr>
+          <th>Function</th>
+          <th>What I own</th>
+          <th>Market title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>People Ops</td>
+          <td>Full-cycle recruiting, onboarding & offboarding across 21 jurisdictions, EOR & contractor management, policy & handbook authorship, employee relations, compliance</td>
+          <td>HR Director / VP People</td>
+        </tr>
+        <tr>
+          <td>Finance</td>
+          <td>AR/AP ownership, $149K–$183K/month invoicing, QBO & ChargeOver administration, financial reporting, billing process design</td>
+          <td>Finance Manager / Controller</td>
+        </tr>
+        <tr>
+          <td>Payroll & Benefits</td>
+          <td>Full payroll oversight via Rippling, bonus & commission calculation, benefits administration (medical, 401k, maternity), multi-state & international compliance, payroll audits</td>
+          <td>Payroll & Benefits Manager</td>
+        </tr>
+        <tr>
+          <td>Executive Ops</td>
+          <td>Independent platform decisions, SLT document preparation, Senior Leadership Team member, vendor evaluation & contracts</td>
+          <td>Chief of Staff / Director of Ops</td>
+        </tr>
+        <tr>
+          <td>Knowledge</td>
+          <td>Owns the HRFIN Confluence space, policy library, playbook library, operating SOPs — 699 Jira issues in 52 weeks</td>
+          <td>Head of Enablement</td>
+        </tr>
+        <tr>
+          <td>Legal & Compliance</td>
+          <td>W-9 filings, trademark work, contractor agreements, Avalara tax integration, compliance across 10 US states + 11 countries</td>
+          <td>Legal & Compliance Coordinator</td>
+        </tr>
+        <tr>
+          <td>Systems Admin</td>
+          <td>Owns and administers Rippling, QBO, ChargeOver, Accrue, Avalara, Zoom, Aircall, Tempo, and most company tooling</td>
+          <td>IT / Systems Operations Manager</td>
+        </tr>
+        <tr>
+          <td>Team Management</td>
+          <td>Manages 2 part-time contractors, guides and supports all new hires across the organization</td>
+          <td>People Manager</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <div class="placeholder-box reveal">
-    <p><strong>More accomplishments coming soon.</strong><br>This section is being updated with additional career highlights, project outcomes, and impact metrics.</p>
-  </div>
 </div>
 
 <footer><p>Shelby Calhoun · Sheebies · Brussels, Belgium · 2026</p></footer>
