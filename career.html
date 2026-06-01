@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career · Shelby Calhoun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --g950:#020c05;--g900:#061810;--g800:#0a2a18;--g700:#0f3d22;--g600:#1a5c33;
+  --g500:#2a8a4f;--g400:#3db870;--g300:#6dd49a;--g200:#a3e8be;--g100:#d4f5e4;
+  --p950:#07040f;--p900:#0e0a1c;--p800:#1c1438;--p700:#2e2060;--p600:#4a358f;
+  --p500:#6b52b8;--p400:#9178d4;--p300:#b9a4e8;--p200:#d8ccf5;--p100:#ede8fa;
+  --n900:#0f0f0f;--n700:#2e2e2e;--n600:#4a4a4a;--n500:#6b6b6b;--n400:#909090;
+  --n300:#b8b8b8;--n200:#d8d8d8;--n100:#f0f0f0;--white:#ffffff;
+  --font:'Plus Jakarta Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);background:var(--g800);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 20%,rgba(46,32,96,.55) 0%,transparent 65%),radial-gradient(ellipse 50% 70% at 10% 90%,rgba(26,92,51,.4) 0%,transparent 60%);pointer-events:none;z-index:0;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(10,42,24,.9);backdrop-filter:blur(12px);border-bottom:.5px solid rgba(109,212,154,.12);}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-s{width:26px;height:34px;flex-shrink:0;}
+.nav-wordmark{font-weight:800;font-size:1.15rem;letter-spacing:-.02em;color:var(--white);line-height:1;}
+.nav-wordmark span{color:var(--g300);}
+.nav-links{display:flex;align-items:center;gap:.2rem;}
+.nav-link{font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);text-decoration:none;padding:.4rem .75rem;border-radius:6px;transition:all .2s;}
+.nav-link:hover,.nav-link.active{color:var(--g300);background:rgba(61,184,112,.08);}
+.nav-link.active{color:var(--g300);}
+
+/* PAGE WRAPPER */
+.page-wrap{position:relative;z-index:1;padding:7rem 4rem 5rem;max-width:1200px;margin:0 auto;}
+
+/* PAGE HEADER */
+.page-eyebrow{font-size:.65rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--g300);margin-bottom:.8rem;}
+.page-title{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--white);margin-bottom:1.5rem;}
+.page-divider{height:2px;background:linear-gradient(90deg,transparent,var(--g400),var(--p400),transparent);margin-bottom:3rem;width:300px;}
+
+/* CARDS */
+.card{border-radius:12px;padding:2rem;border:.5px solid rgba(109,212,154,.15);background:rgba(15,61,34,.25);backdrop-filter:blur(8px);transition:all .25s;}
+.card:hover{border-color:rgba(109,212,154,.4);background:rgba(15,61,34,.4);transform:translateY(-2px);}
+.card-purple{border-color:rgba(185,164,232,.15);background:rgba(28,20,56,.25);}
+.card-purple:hover{border-color:rgba(185,164,232,.4);background:rgba(28,20,56,.4);}
+
+/* LABELS */
+.label{font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--g400);}
+.label-purple{color:var(--p300);}
+.tag{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border:.5px solid rgba(109,212,154,.3);border-radius:4px;color:var(--g300);display:inline-block;}
+
+/* FOOTER */
+footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:.5px solid rgba(109,212,154,.1);margin-top:4rem;}
+footer p{font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.2);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:1rem 1.2rem;}
+  .nav-links{display:none;}
+  .page-wrap{padding:5rem 1.2rem 3rem;}
+}
+
+.page-wrap{position:relative;z-index:1;padding:7rem 4rem 5rem;max-width:1200px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
+.mb1{margin-bottom:1rem;} .mb2{margin-bottom:2rem;} .mb3{margin-bottom:3rem;}
+.text-muted{color:rgba(255,255,255,.55);font-size:.9rem;line-height:1.75;}
+.text-small{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.6;}
+.big-number{font-size:3rem;font-weight:800;letter-spacing:-.03em;color:var(--g300);line-height:1;}
+.card-title{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.4rem;}
+.card-sub{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g300);margin-bottom:.6rem;}
+.card-sub-purple{color:var(--p300);}
+.card-body{font-size:.9rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,.65);font-style:italic;}
+.timeline-item{padding:2.5rem 0;border-bottom:.5px solid rgba(109,212,154,.1);display:grid;grid-template-columns:200px 1fr;gap:3rem;}
+.timeline-item:last-child{border-bottom:none;}
+.timeline-date{font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g400);padding-top:.25rem;}
+.timeline-company{font-size:.75rem;font-weight:500;color:rgba(255,255,255,.4);margin-top:.3rem;letter-spacing:.05em;}
+.timeline-role{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;color:var(--white);margin-bottom:.8rem;line-height:1.15;}
+.timeline-role span{color:var(--g300);}
+.timeline-body{font-size:.88rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.65);margin-bottom:.8rem;}
+.timeline-body p{margin-bottom:.65rem;}
+.timeline-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
+@media(max-width:768px){
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
+  .timeline-item{grid-template-columns:1fr;gap:.5rem;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><svg class="nav-s" viewBox="0 0 150 210" fill="none">
+  <defs><linearGradient id="nsg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3db870"/><stop offset="50%" stop-color="#6b52b8"/><stop offset="100%" stop-color="#1c1438"/>
+  </linearGradient></defs>
+  <polygon points="75,0 150,30 150,77 0,137 0,180 75,210 150,180 150,137 0,77 0,30" fill="url(#nsg)"/>
+  <polyline points="75,0 150,30 150,77 0,137 0,180 75,210 150,180 150,137 0,77 0,30 75,0" fill="none" stroke="rgba(109,212,154,0.35)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg><div class="nav-wordmark">Sheeb<span>ies</span></div></a>
+  <div class="nav-links"><a href="index.html" class="nav-link">Home</a><a href="accomplishments.html" class="nav-link">Accomplishments</a><a href="career.html" class="nav-link active">Career</a><a href="certifications.html" class="nav-link">Certifications</a><a href="awards.html" class="nav-link">Awards</a><a href="recommendations.html" class="nav-link">Recommendations</a></div>
+</nav>
+
+<div class="page-wrap">
+  <p class="page-eyebrow">Experience</p>
+  <h1 class="page-title">Career</h1>
+  <div class="page-divider"></div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">May 2026 – Present</div>
+      <div class="timeline-company">Unlimited Tech Solutions</div>
+    </div>
+    <div>
+      <div class="timeline-role">Director of <span>Finance & HR</span></div>
+      <div class="timeline-body">
+        <p>Promoted to Director-level scope within 15 months of rejoining, I now oversee all people and finance operations across a globally distributed organization spanning 10 countries on 5 continents, including 10 U.S. states. On the HR side, I focus on building and maintaining the people infrastructure — owning our HRIS (Rippling), managing contractors, EOR, and W2 employees, handling escalations, and serving as the go-to for all HR-related questions across the organization. On the finance side, I own end-to-end AR/AP, budgeting, P&L management, reimbursements, and bonus processing. I also sit on the Senior Leadership Team, contributing to organizational strategy and cross-functional decision-making, and administer a broad finance tech stack including QuickBooks Online, ChargeOver, Accrue, Avalara, and Tempo.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">Rippling</span><span class="tag">QuickBooks Online</span><span class="tag">HR Compliance</span><span class="tag">P&L Management</span><span class="tag">EOR</span><span class="tag">SLT</span><span class="tag">Avalara</span><span class="tag">ChargeOver</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Feb 2025 – May 2026</div>
+      <div class="timeline-company">Unlimited Tech Solutions</div>
+    </div>
+    <div>
+      <div class="timeline-role">HR & Finance <span>Manager</span></div>
+      <div class="timeline-body">
+        <p>Built the company's HR function from the ground up — designing compliant onboarding, offboarding, contractor, and EOR frameworks that the team still runs on today.</p>
+        <p>Designed a structured compensation review process including market benchmarking, Belgian EOR cost modeling, and director-level pay gap analysis to inform leadership decisions.</p>
+        <p>Managed AR/AP across multiple currencies — reconciling invoices, monitoring outstanding balances, and maintaining financial accuracy.</p>
+        <p>Built a comprehensive HRFIN documentation system in Confluence and Jira: SOPs, branded portal assets, and process guides that improved team-wide audit readiness.</p>
+        <p>Conducted a granular six-month time-tracking analysis in Harvest, surfacing recurring workflow inefficiencies and informing resource allocation decisions.</p>
+        <p>Managed and coached a direct report, providing structured performance feedback and advocating for accountability standards at the leadership level.</p>
+        <p>Served as primary point of contact for all HR and finance queries from leadership, employees, and external EOR and payroll partners.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">HR Infrastructure</span><span class="tag">AR/AP</span><span class="tag">Confluence</span><span class="tag">Jira</span><span class="tag">Deel</span><span class="tag">Harvest</span><span class="tag">EOR</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Apr 2024 – Feb 2025</div>
+      <div class="timeline-company">Unlimited Tech Solutions</div>
+    </div>
+    <div>
+      <div class="timeline-role">Account <span>Manager</span></div>
+      <div class="timeline-body">
+        <p>Led 30+ concurrent client projects ranging from standard onboarding to complex custom integrations and migrations — managing budgets, timelines, risk, and capacity planning across the full project lifecycle.</p>
+        <p>Served as primary point of contact for all client communication, maintaining high satisfaction through proactive issue resolution.</p>
+        <p>Maintained comprehensive client records in HubSpot and delivered regular performance reports to internal leadership.</p>
+        <p>Promoted to HR & Finance Manager within 11 months.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">HubSpot</span><span class="tag">Project Management</span><span class="tag">Client Relations</span><span class="tag">30+ Concurrent Projects</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Apr 2023 – Sep 2023</div>
+      <div class="timeline-company">Bossert Associates GmbH</div>
+    </div>
+    <div>
+      <div class="timeline-role">Program <span>Manager</span></div>
+      <div class="timeline-body">
+        <p>Administered 7 concurrent enterprise-level projects with a cumulative value exceeding €800,000, ensuring adherence to SLAs, budgets, and deadlines.</p>
+        <p>Produced 40+ SOPs that improved team cohesion, reduced task turnaround time, and enabled efficient delegation across a distributed team.</p>
+        <p>Reduced client response time by ~66% through streamlined departmental communication processes.</p>
+        <p>Designed and delivered 3 marketing campaigns that generated 100+ email sign-ups and secured commitments from 19 clients across two future program cycles.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">€800K Portfolio</span><span class="tag">40+ SOPs</span><span class="tag">Asana</span><span class="tag">66% Faster Response</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Feb 2022 – Apr 2023</div>
+      <div class="timeline-company">Unlimited Tech Solutions</div>
+    </div>
+    <div>
+      <div class="timeline-role">Digital PM → <span>Ops Manager</span></div>
+      <div class="timeline-body">
+        <p>Directed and managed 80+ client accounts; supervised a team of 8 remote employees and contractors across multiple time zones.</p>
+        <p>Optimized billable hour allocations, improving revenue accuracy and internal process efficiency.</p>
+        <p>Led 10+ end-to-end strategic marketing campaigns for clients, from stakeholder identification through execution.</p>
+        <p>Implemented dozens of SOPs covering employee onboarding, system utilization, offboarding, and project management.</p>
+        <p>Evaluated and selected a project management tool from a competitive set, aligning platform capabilities with business needs.</p>
+        <p>Created detailed project plans with dependencies, milestones, and budgets using Gantt charts and time-tracking software.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">80+ Accounts</span><span class="tag">Team of 8</span><span class="tag">Operations</span><span class="tag">10+ Campaigns</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Aug 2021 – Feb 2022</div>
+      <div class="timeline-company">WorkMotion GmbH</div>
+    </div>
+    <div>
+      <div class="timeline-role">Knowledge <span>Manager</span></div>
+      <div class="timeline-body">
+        <p>Led a remote team to deliver 67 comprehensive global hiring guides spanning multiple countries and departmental requirements.</p>
+        <p>Launched a company-wide knowledge challenge that yielded 1,000+ quality knowledge pieces and achieved a 60% participation rate in the first month.</p>
+        <p>Produced 20+ SOPs for the Knowledge Team, streamlining global documentation workflows.</p>
+        <p>Implemented a knowledge management system focused on team training and documentation to reduce process inefficiencies.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">67 Guides</span><span class="tag">1000+ Knowledge Pieces</span><span class="tag">60% Participation</span><span class="tag">Confluence</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal">
+    <div>
+      <div class="timeline-date">Apr 2016 – Jul 2018</div>
+      <div class="timeline-company">U.S. Department of State</div>
+    </div>
+    <div>
+      <div class="timeline-role">Consular <span>Assistant</span></div>
+      <div class="timeline-body">
+        <p>Held U.S. Government Secret Security Clearance throughout tenure.</p>
+        <p>Generated and analyzed detailed reports for Immigrant and Non-Immigrant visa cases in the Fraud Prevention Unit.</p>
+        <p>Increased DNA collection interview capacity from 3 to 8 per day through process redesign and innovative case tracking methods.</p>
+        <p>Authored 10+ SOPs for the Fraud Prevention Unit, ensuring policy compliance and enhancing program efficiency.</p>
+        <p>Received three Embassy awards for superior performance, leadership, and teamwork during an eight-month staffing gap.</p>
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">Secret Clearance</span><span class="tag">Fraud Prevention</span><span class="tag">4 Embassy Awards</span><span class="tag">10+ SOPs</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer><p>Shelby Calhoun · Sheebies · Brussels, Belgium · 2026</p></footer>
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:.1});
+reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
